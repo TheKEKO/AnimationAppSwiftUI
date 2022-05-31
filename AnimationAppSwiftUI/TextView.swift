@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct TextView: View {
     @State var show = false
     
@@ -27,8 +28,9 @@ struct TextView: View {
                     .mask(
                         
                         Capsule()
-                            .fill(LinearGradient(gradient: .init(colors: [.clear,
-                                .yellow, .clear]), startPoint: .top, endPoint: .bottom))
+                            .fill(LinearGradient(
+                                gradient: .init(colors: [.clear, .yellow, .clear]),
+                                startPoint: .top, endPoint: .bottom))
                             .rotationEffect(.init(degrees: 30))
                             .offset(x: self.show ? 180 : -130)
                     )
@@ -42,8 +44,6 @@ struct TextView: View {
         }
     }
 }
-
-
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {

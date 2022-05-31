@@ -8,10 +8,10 @@
 
 import SwiftUI
 
+
 struct LightView: View {
     var body: some View {
         VStack {
-            
             Path { path in
                 path.move(to: CGPoint(x: 70, y: 250))
                 path.addLine(to: CGPoint(x: 130, y: 250))
@@ -20,8 +20,8 @@ struct LightView: View {
             }
             .fill(
                 LinearGradient(gradient: Gradient(colors: [.clear, .yellow, .clear]),
-                    startPoint: .bottom,
-                           endPoint: .top))
+                               startPoint: .bottom,
+                               endPoint: .top))
             .scaleEffect(1.4)
         }
     }
