@@ -38,7 +38,7 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 80, height: 80)
                             .foregroundColor(onOff ? .red : .green)
-                            .rotation3DEffect(.degrees(onOff ? 0 : 360), axis:
+                            .rotation3DEffect(.degrees(onOff ? 0 : 180), axis:
                                                 (x: 0, y: 1, z: 0))
                             .animation(Animation.easeOut(duration: 0.7), value: onOff)
                     }
