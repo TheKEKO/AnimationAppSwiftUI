@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct TextView: View {
     @State var show = false
     
@@ -16,12 +15,12 @@ struct TextView: View {
             Color.black.edgesIgnoringSafeArea(.all)
             ZStack {
                 
-                Text("SwiftBook")
+                Text("Flashlight")
                     .foregroundColor(Color.yellow.opacity(0.4))
                     .font(.system(size: 50))
                     .bold()
                 
-                Text("SwiftBook")
+                Text("Flashlight")
                     .foregroundColor(.yellow)
                     .font(.system(size: 50))
                     .bold()

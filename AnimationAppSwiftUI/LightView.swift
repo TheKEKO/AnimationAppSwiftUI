@@ -5,9 +5,7 @@
 //  Created by Aleksandr F. on 30.05.2022.
 //
 
-
 import SwiftUI
-
 
 struct LightView: View {
     var body: some View {
@@ -22,6 +20,7 @@ struct LightView: View {
                 LinearGradient(gradient: Gradient(colors: [.clear, .yellow, .clear]),
                                startPoint: .bottom,
                                endPoint: .top))
+            .shadow(color: .yellow, radius: 5, x: 2, y: 2)
             .scaleEffect(1.4)
         }
     }
