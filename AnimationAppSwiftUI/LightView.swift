@@ -26,7 +26,6 @@ struct LightView: View {
     }
 }
 
-
 struct LightView_Previews: PreviewProvider {
     static var previews: some View {
         LightView()
