@@ -39,7 +39,7 @@ struct ContentView: View {
                             .foregroundColor(onOff ? .red : .green)
                             .rotation3DEffect(.degrees(onOff ? 0 : 180), axis:
                                                 (x: 0, y: 1, z: 0))
-                            .animation(Animation.easeOut(duration: 0.8), value: onOff)
+                            .animation(Animation.easeOut(duration: 0.7), value: onOff)
                     }
                 }
             }
